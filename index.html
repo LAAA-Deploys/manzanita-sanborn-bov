@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Broker Opinion of Value - 904-906 Manzanita St &amp; 905 Sanborn Ave</title>
+<link rel="icon" type="image/png" href="images/LAAA_Team_Blue.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; color: #333; line-height: 1.6; background: #fff; }
+html { scroll-padding-top: 50px; }
+p { margin-bottom: 16px; font-size: 14px; line-height: 1.7; }
+h1,h2,h3 { font-family: 'DM Serif Display', Georgia, serif; }
+.cover { position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; overflow: hidden; }
+.cover-bg { position: absolute; inset: 0; background-size: cover; background-position: center; filter: brightness(0.45); z-index: 0; }
+.cover-content { position: relative; z-index: 2; padding: 60px 40px; max-width: 900px; }
+.cover-logo { width: 280px; margin: 0 auto 26px; display: block; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3)); }
+.cover-label { font-size: 13px; font-weight: 500; letter-spacing: 3px; text-transform: uppercase; color: #C5A258; margin-bottom: 18px; }
+.cover-title { font-size: 44px; font-weight: 400; letter-spacing: 1px; margin-bottom: 8px; text-shadow: 0 2px 12px rgba(0,0,0,0.3); font-family: 'DM Serif Display', serif; line-height: 1.15; }
+.cover-address { font-size: 17px; font-weight: 400; letter-spacing: 1px; color: rgba(255,255,255,0.85); margin-top: 4px; }
+.cover-stats { display: flex; gap: 36px; justify-content: center; flex-wrap: wrap; margin-bottom: 28px; }
+.cover-stat { text-align: center; }
+.cover-stat-value { display: block; font-size: 27px; font-weight: 600; color: #fff; font-family: 'DM Serif Display', serif; }
+.cover-stat-label { display: block; font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px; color: #C5A258; margin-top: 4px; }
+.cover-headshots { display: flex; justify-content: center; gap: 34px; margin-top: 22px; margin-bottom: 14px; flex-wrap: wrap; }
+.cover-headshot { width: 84px; height: 84px; border-radius: 50%; border: 3px solid #C5A258; object-fit: cover; box-shadow: 0 4px 16px rgba(0,0,0,0.4); }
+.cover-headshot-name { font-size: 12px; font-weight: 600; margin-top: 6px; color: #fff; }
+.cover-headshot-title { font-size: 10px; color: #C5A258; max-width: 160px; }
+.cover-headshot-wrap { text-align: center; }
+.client-greeting { font-size: 14px; font-weight: 500; color: #C5A258; letter-spacing: 1px; margin-top: 14px; }
+.gold-line { height: 3px; background: #C5A258; }
+.toc-nav { background: #1B3A5C; padding: 0 12px; display: flex; flex-wrap: nowrap; justify-content: center; align-items: stretch; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.15); overflow-x: auto; scrollbar-width: none; }
+.toc-nav::-webkit-scrollbar { display: none; }
+.toc-nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 11px; font-weight: 500; letter-spacing: 0.3px; text-transform: uppercase; padding: 12px 10px; border-bottom: 2px solid transparent; white-space: nowrap; display: flex; align-items: center; }
+.toc-nav a:hover { color: #fff; background: rgba(197,162,88,0.12); border-bottom-color: rgba(197,162,88,0.4); }
+.toc-nav a.toc-active { color: #C5A258; font-weight: 600; border-bottom-color: #C5A258; }
+.section { padding: 50px 40px; max-width: 1100px; margin: 0 auto; }
+.section-alt { background: #f8f9fa; }
+.section-title { font-size: 30px; font-weight: 400; color: #1B3A5C; margin-bottom: 6px; font-family: 'DM Serif Display', serif; }
+.section-subtitle { font-size: 13px; color: #C5A258; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px; font-weight: 500; }
+.section-divider { width: 60px; height: 3px; background: #C5A258; margin-bottom: 30px; }
+.sub-heading { font-size: 19px; font-weight: 400; color: #1B3A5C; margin: 30px 0 16px; font-family: 'DM Serif Display', serif; }
+.metrics-grid, .metrics-grid-4 { display: grid; gap: 16px; margin-bottom: 30px; }
+.metrics-grid { grid-template-columns: repeat(4, 1fr); }
+.metrics-grid-4 { grid-template-columns: repeat(4, 1fr); }
+.metric-card { background: #1B3A5C; border-radius: 12px; padding: 24px; text-align: center; color: #fff; }
+.metric-card.carolwood { background: #111; }
+.metric-value { display: block; font-size: 28px; font-weight: 600; font-family: 'DM Serif Display', serif; }
+.metric-label { display: block; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.6); margin-top: 6px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 24px; font-size: 13px; }
+th { background: #1B3A5C; color: #fff; padding: 10px 12px; text-align: left; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+td { padding: 8px 12px; border-bottom: 1px solid #eee; }
+tr:nth-child(even) { background: #f5f5f5; }
+tr.highlight { background: #FFF8E7 !important; border-left: 3px solid #C5A258; }
+tr.summary td { background: #1B3A5C !important; color: #fff; }
+tr.summary td strong { color: #fff; }
+td.num, th.num { text-align: right; }
+.table-scroll { overflow-x: auto; margin-bottom: 24px; }
+.table-scroll table { min-width: 700px; margin-bottom: 0; }
+.info-table td { padding: 8px 12px; border-bottom: 1px solid #eee; font-size: 13px; }
+.info-table td:first-child { font-weight: 600; color: #1B3A5C; width: 45%; }
+.tr-tagline { font-size: 24px; font-weight: 600; color: #1B3A5C; text-align: center; padding: 16px 24px; margin-bottom: 24px; border-left: 4px solid #C5A258; background: #FFF8E7; border-radius: 0 4px 4px 0; font-style: italic; }
+.tr-service-quote { margin: 24px 0; }
+.tr-service-quote h3 { font-size: 20px; font-weight: 400; color: #1B3A5C; margin-bottom: 12px; font-family: 'DM Serif Display', serif; }
+.tr-service-quote p { font-size: 14px; line-height: 1.7; }
+.bio-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 24px 0; }
+.bio-card { display: flex; gap: 16px; align-items: flex-start; }
+.bio-headshot { width: 100px; height: 100px; border-radius: 50%; border: 3px solid #C5A258; object-fit: cover; flex-shrink: 0; }
+.bio-headshot.cw { border-color: #111; }
+.bio-name { font-size: 17px; font-weight: 400; color: #1B3A5C; font-family: 'DM Serif Display', serif; }
+.bio-title { font-size: 11px; color: #C5A258; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+.bio-text { font-size: 13px; line-height: 1.6; color: #444; }
+.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 20px 0; }
+.team-card { text-align: center; padding: 8px; }
+.team-headshot { width: 64px; height: 64px; border-radius: 50%; border: 2px solid #C5A258; object-fit: cover; margin: 0 auto 6px; display: block; }
+.team-card-name { font-size: 13px; font-weight: 700; color: #1B3A5C; }
+.team-card-title { font-size: 10px; color: #C5A258; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; }
+.costar-badge { text-align: center; background: #FFF8E7; border: 2px solid #C5A258; border-radius: 8px; padding: 20px 24px; margin: 24px auto; max-width: 640px; }
+.costar-badge-title { font-size: 22px; font-weight: 400; color: #1B3A5C; font-family: 'DM Serif Display', serif; }
+.costar-badge-sub { font-size: 12px; color: #C5A258; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600; margin-top: 6px; }
+.condition-note { background: #FFF8E7; border-left: 4px solid #C5A258; padding: 16px 20px; margin: 24px 0; border-radius: 0 4px 4px 0; font-size: 13px; line-height: 1.6; }
+.condition-note-label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #C5A258; margin-bottom: 8px; }
+.achievements-list { font-size: 13px; line-height: 1.9; }
+.note-ref { font-size: 9px; color: #C5A258; font-weight: 700; vertical-align: super; }
+.cw-band { background: #111; border-radius: 12px; padding: 28px 32px; color: #fff; margin: 30px 0; }
+.cw-band h3 { font-size: 22px; font-weight: 400; color: #fff; margin-bottom: 4px; font-family: 'DM Serif Display', serif; }
+.cw-band .cw-eyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #bbb; font-weight: 600; margin-bottom: 12px; }
+.cw-band p { color: rgba(255,255,255,0.8); font-size: 13px; }
+.cw-metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 18px 0; }
+.cw-metric { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; padding: 16px 12px; text-align: center; }
+.cw-metric-value { display: block; font-size: 24px; font-weight: 600; font-family: 'DM Serif Display', serif; color: #fff; }
+.cw-metric-label { display: block; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.55); margin-top: 5px; }
+.mkt-quote { background: #FFF8E7; border-left: 4px solid #C5A258; padding: 16px 24px; margin: 20px 0; border-radius: 0 4px 4px 0; font-size: 15px; font-style: italic; line-height: 1.6; color: #1B3A5C; }
+.mkt-channels { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
+.mkt-channel { background: #f0f4f8; border-radius: 8px; padding: 16px 20px; }
+.mkt-channel h4 { color: #1B3A5C; font-size: 14px; margin-bottom: 8px; font-family: 'Inter', sans-serif; font-weight: 700; }
+.mkt-channel ul { list-style: none; }
+.mkt-channel li { font-size: 13px; line-height: 1.6; margin-bottom: 4px; padding-left: 14px; position: relative; }
+.mkt-channel li:before { content: '\2022'; color: #C5A258; position: absolute; left: 0; }
+.platform-strip { display: flex; justify-content: center; align-items: center; gap: 24px; flex-wrap: wrap; margin-top: 24px; padding: 14px 20px; background: #1B3A5C; border-radius: 6px; }
+.platform-strip-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: #C5A258; font-weight: 600; }
+.platform-name { font-size: 13px; font-weight: 600; color: #fff; letter-spacing: 0.5px; }
+.press-strip { display: flex; justify-content: center; align-items: center; gap: 28px; flex-wrap: wrap; margin: 24px 0 0; padding: 12px 20px; background: #f0f4f8; border-radius: 6px; }
+.press-strip-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: #888; font-weight: 600; }
+.press-logo { font-size: 13px; font-weight: 700; color: #1B3A5C; letter-spacing: 0.5px; }
+.inv-split { display: grid; grid-template-columns: 50% 50%; gap: 32px; }
+.inv-left .metrics-grid-4 { grid-template-columns: repeat(2, 1fr); }
+.inv-text p { font-size: 14px; line-height: 1.7; margin-bottom: 12px; }
+.inv-right { display: flex; flex-direction: column; gap: 16px; }
+.inv-highlights { background: #f0f4f8; border: 1px solid #dce3eb; border-radius: 8px; padding: 18px 22px; flex: 1; }
+.inv-highlights h4 { color: #1B3A5C; font-size: 14px; margin-bottom: 10px; }
+.inv-highlights ul { list-style: none; }
+.inv-highlights li { font-size: 13px; line-height: 1.6; margin-bottom: 8px; padding-left: 14px; position: relative; }
+.inv-highlights li:before { content: '\2022'; color: #C5A258; position: absolute; left: 0; }
+.loc-grid { display: grid; grid-template-columns: 58% 42%; gap: 28px; align-items: start; }
+.loc-left p { font-size: 14px; line-height: 1.7; margin-bottom: 14px; }
+.loc-wide-map { width: 100%; height: 300px; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); margin-top: 24px; }
+.loc-wide-map img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.loc-wide-map.comp-map { background: #e8e4d8; }
+.loc-wide-map.comp-map img { object-fit: contain; }
+.prop-grid-4 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.os-two-col { display: grid; grid-template-columns: 55% 45%; gap: 24px; align-items: stretch; margin: 30px 0; }
+.os-right { font-size: 11px; line-height: 1.5; color: #555; background: #f8f9fb; border: 1px solid #e0e4ea; border-radius: 6px; padding: 18px 22px; }
+.os-right h3 { font-size: 15px; margin: 0 0 10px; }
+.os-right p { margin-bottom: 6px; font-size: 11px; }
+.summary-page { margin-top: 30px; border: 1px solid #dce3eb; border-radius: 8px; padding: 24px; background: #fff; }
+.summary-banner { text-align: center; background: #1B3A5C; color: #fff; padding: 10px 16px; font-size: 14px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; border-radius: 4px; margin-bottom: 20px; }
+.summary-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+.summary-table { width: 100%; border-collapse: collapse; margin-bottom: 14px; font-size: 12px; border: 1px solid #dce3eb; }
+.summary-table th, .summary-table td { padding: 5px 10px; border-bottom: 1px solid #e8ecf0; }
+.summary-header { background: #1B3A5C; color: #fff; padding: 6px 10px !important; font-size: 10px !important; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+.summary-table tr.summary td { border-top: 2px solid #1B3A5C; background: #f0f4f8 !important; color: #1B3A5C; }
+.summary-table tr.summary td strong { color: #1B3A5C; }
+.summary-table tr:nth-child(even) { background: #fafbfc; }
+.summary-trade-range { text-align: center; margin: 30px auto; padding: 18px 28px; border: 2px solid #1B3A5C; border-radius: 6px; max-width: 560px; }
+.summary-trade-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #555; font-weight: 600; margin-bottom: 6px; }
+.summary-trade-prices { font-size: 28px; font-weight: 700; color: #1B3A5C; font-family: 'DM Serif Display', serif; }
+.buyer-split { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+.obj-item { margin-bottom: 16px; }
+.obj-q { font-weight: 700; color: #1B3A5C; margin-bottom: 4px; font-size: 14px; }
+.obj-a { font-size: 13px; color: #444; line-height: 1.6; }
+.bp-closing { font-size: 13px; color: #444; margin-top: 12px; font-style: italic; }
+.narrative { font-size: 14px; line-height: 1.7; color: #444; margin-bottom: 16px; }
+.embed-map-wrap { position: relative; width: 100%; margin-bottom: 24px; border-radius: 8px; overflow: hidden; }
+.embed-map-wrap iframe { display: block; width: 100%; height: 420px; border: 0; }
+.page-break-marker { height: 4px; background: repeating-linear-gradient(90deg, #ddd 0, #ddd 8px, transparent 8px, transparent 16px); max-width: 1100px; margin: 0 auto; }
+.price-duo { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 30px 0; }
+.price-card { border: 2px solid #1B3A5C; border-radius: 10px; padding: 24px; text-align: center; background: #fff; }
+.price-card .pc-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #C5A258; font-weight: 600; margin-bottom: 6px; }
+.price-card .pc-price { font-size: 38px; font-weight: 700; color: #1B3A5C; font-family: 'DM Serif Display', serif; line-height: 1.1; }
+.price-card .pc-sub { font-size: 12px; color: #666; margin-top: 10px; line-height: 1.7; }
+.footer { background: #1B3A5C; color: #fff; padding: 50px 40px; text-align: center; }
+.footer-logo { width: 200px; margin-bottom: 30px; }
+.footer-team { display: flex; justify-content: center; gap: 44px; margin-bottom: 30px; flex-wrap: wrap; }
+.footer-person { text-align: center; min-width: 260px; }
+.footer-headshot { width: 80px; height: 80px; border-radius: 50%; border: 2px solid #C5A258; object-fit: cover; }
+.footer-name { font-size: 17px; font-weight: 400; margin-top: 8px; font-family: 'DM Serif Display', serif; }
+.footer-title { font-size: 12px; color: #C5A258; margin-bottom: 8px; }
+.footer-contact { font-size: 12px; color: rgba(255,255,255,0.7); line-height: 1.8; }
+.footer-contact a { color: rgba(255,255,255,0.7); text-decoration: none; }
+.footer-office { font-size: 12px; color: rgba(255,255,255,0.6); margin-bottom: 12px; }
+.footer-disclaimer { font-size: 10px; color: rgba(255,255,255,0.35); margin-top: 20px; max-width: 800px; margin-left: auto; margin-right: auto; }
+@media (max-width: 768px) {
+  .cover-content { padding: 30px 20px; } .cover-title { font-size: 30px; } .cover-logo { width: 220px; }
+  .cover-headshots { gap: 20px; } .cover-headshot { width: 64px; height: 64px; }
+  .cover-stats { gap: 22px; }
+  .section { padding: 30px 16px; }
+  .buyer-split, .inv-split, .os-two-col, .loc-grid, .price-duo { grid-template-columns: 1fr; }
+  .metrics-grid, .metrics-grid-4, .cw-metrics { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .metric-card { padding: 16px 10px; } .metric-value { font-size: 24px; }
+  .mkt-channels { grid-template-columns: 1fr; }
+  .summary-two-col, .prop-grid-4 { grid-template-columns: 1fr; }
+  .bio-grid { grid-template-columns: 1fr; gap: 16px; }
+  .team-grid { grid-template-columns: repeat(3, 1fr); }
+  .footer-team { flex-direction: column; align-items: center; gap: 30px; }
+  .embed-map-wrap iframe { height: 320px; }
+  .toc-nav a { font-size: 10px; padding: 10px 7px; }
+}
+@media (max-width: 420px) {
+  .cover-title { font-size: 25px; } .cover-stat-value { font-size: 22px; }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .metrics-grid-4, .cw-metrics { grid-template-columns: 1fr 1fr; } .metric-value { font-size: 20px; }
+  .section { padding: 22px 12px; }
+}
+@media print {
+  @page { size: letter landscape; margin: 0.4in 0.5in; }
+  body { font-size: 11px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .toc-nav, .embed-map-wrap, .page-break-marker { display: none !important; }
+  .cover { min-height: 7.5in; page-break-after: always; }
+  .cover-headshots { display: flex !important; }
+  .section { padding: 20px 0; page-break-before: always; }
+  .os-two-col { page-break-before: always; }
+  .summary-page { page-break-before: always; }
+  .price-reveal { page-break-before: always; }
+  #prop-details, #property-info, #sale-comps, #on-market, #marketing { page-break-before: always; }
+  .footer { page-break-before: always; }
+  table { font-size: 10px; } th { padding: 5px 8px; font-size: 9px; } td { padding: 4px 8px; }
+}
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="cover-bg" style="background-image:url('images/cover_hero_outline.png');"></div>
+  <div class="cover-content">
+    <img src="images/LAAA_Team_White.png" class="cover-logo" alt="LAAA Team">
+    <div class="cover-label">Confidential Broker Opinion of Value</div>
+    <div class="cover-title">904-906 Manzanita St<br>&amp; 905 Sanborn Ave</div>
+    <div class="cover-address">Silver Lake &middot; Sunset Junction &middot; Los Angeles, CA 90029</div>
+    <div class="gold-line" style="width:80px;margin:20px auto;"></div>
+    <div class="cover-stats">
+      <div class="cover-stat"><span class="cover-stat-value">11</span><span class="cover-stat-label">Units &middot; 2 Parcels</span></div>
+      <div class="cover-stat"><span class="cover-stat-value">5,977</span><span class="cover-stat-label">Building SF</span></div>
+      <div class="cover-stat"><span class="cover-stat-value">1916 &middot; 1927</span><span class="cover-stat-label">Years Built</span></div>
+      <div class="cover-stat"><span class="cover-stat-value">11,109</span><span class="cover-stat-label">Combined Lot SF</span></div>
+    </div>
+    <div class="cover-headshots">
+      <div class="cover-headshot-wrap"><img class="cover-headshot" src="images/Glen_Scher.png" alt="Glen Scher"><div class="cover-headshot-name">Glen Scher</div><div class="cover-headshot-title">Senior Managing Director Investments<br>Marcus &amp; Millichap &middot; LAAA Team</div></div>
+      <div class="cover-headshot-wrap"><img class="cover-headshot" src="images/Filip_Niculete.png" alt="Filip Niculete"><div class="cover-headshot-name">Filip Niculete</div><div class="cover-headshot-title">Senior Managing Director Investments<br>Marcus &amp; Millichap &middot; LAAA Team</div></div>
+      <div class="cover-headshot-wrap"><img class="cover-headshot" src="images/Jon_Adams_head.jpg" alt="Jon Adams"><div class="cover-headshot-name">Jon Adams</div><div class="cover-headshot-title">Real Estate Investment Advisor<br>Carolwood Estates</div></div>
+    </div>
+    <p class="client-greeting" id="client-greeting">Prepared Exclusively for Juan Martinez</p>
+    <p style="font-size:12px;color:rgba(255,255,255,0.55);margin-top:8px;">July 2026</p>
+  </div>
+</div>
+
+<!-- TOC -->
+<nav class="toc-nav" id="toc-nav">
+  <a href="#track-record">Track Record</a>
+  <a href="#marketing">Marketing</a>
+  <a href="#investment">Investment</a>
+  <a href="#location">Location</a>
+  <a href="#prop-details">Properties</a>
+  <a href="#property-info">Buyer Profile</a>
+  <a href="#sale-comps">Sale Comps</a>
+  <a href="#on-market">On-Market</a>
+  <a href="#financials">Financials</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- TRACK RECORD P1 -->
+<div class="section section-alt" id="track-record">
+  <div class="section-title">Two Teams, Total Market Coverage</div>
+  <div class="section-subtitle">LAAA Team of Marcus &amp; Millichap &times; Carolwood Estates</div>
+  <div class="section-divider"></div>
+  <p class="narrative">This assignment pairs Los Angeles' most active multifamily investment team with its dominant luxury residential brokerage. The LAAA Team puts Manzanita &amp; Sanborn in front of every active apartment investor in Los Angeles &mdash; 1031 exchange buyers, private syndicators, and value-add operators. Carolwood Estates opens a second, entirely separate buyer pool: residential and owner-user buyers who evaluate the triplex and the Silver Lake location on lifestyle value rather than cap rate. Between the two channels, no qualified buyer &mdash; commercial or residential &mdash; is missed.</p>
+  <div class="tr-tagline"><span style="display:block;font-size:1.1em;font-weight:700;margin-bottom:4px;">LAAA Team of Marcus &amp; Millichap</span>Expertise, Execution, Excellence.</div>
+  <div class="metrics-grid-4">
+    <div class="metric-card"><span class="metric-value">460+</span><span class="metric-label">Closed Transactions</span></div>
+    <div class="metric-card"><span class="metric-value">$1.47B+</span><span class="metric-label">Total Sales Volume</span></div>
+    <div class="metric-card"><span class="metric-value">4,200+</span><span class="metric-label">Units Sold</span></div>
+    <div class="metric-card"><span class="metric-value">#1</span><span class="metric-label">Most Active &middot; LA County</span></div>
+  </div>
+  <div class="embed-map-wrap">
+    <iframe src="https://www.google.com/maps/d/embed?mid=1ewCjzE3QX9p6m2MqK-md8b6fZitfIzU" loading="lazy" allowfullscreen></iframe>
+  </div>
+  <div class="tr-service-quote">
+    <h3>"We Didn't Invent Great Service, We Just Work Relentlessly to Provide It."</h3>
+    <p>Since 2013, the LAAA Team has closed 460+ multifamily transactions totaling $1.47B+ in volume across Los Angeles, Ventura, and Santa Barbara counties. Our practice is built on disciplined underwriting, the deepest comparable-sales dataset in the market, and a marketing engine that reaches every active multifamily buyer in Los Angeles. We advise owners on when and how to sell &mdash; not just whether &mdash; and we price to clear, not to languish.</p>
+    <p>For Manzanita &amp; Sanborn, that means an evidence-based opinion of value anchored in recent Silver Lake, East Hollywood, and Echo Park vintage apartment sales &mdash; presented with the same rigor we would bring to defending the price against a buyer's due-diligence challenge.</p>
+  </div>
+</div>
+
+<!-- TRACK RECORD P2 / OUR TEAM -->
+<div class="section tr-page2">
+  <div style="text-align:center;"><div class="section-title" style="margin-bottom:4px;">Our Team</div><div class="section-divider" style="margin:0 auto 16px;"></div></div>
+  <div class="costar-badge">
+    <div class="costar-badge-title">#1 Most Active Multifamily Sales Team in LA County</div>
+    <div class="costar-badge-sub">CoStar &bull; 2019, 2020, 2021 &bull; #4 in California</div>
+  </div>
+  <div class="bio-grid">
+    <div class="bio-card"><img class="bio-headshot" src="images/Glen_Scher.png" alt="Glen Scher"><div>
+      <div class="bio-name">Glen Scher</div><div class="bio-title">Senior Managing Director Investments</div>
+      <div class="bio-text">Co-founder of the LAAA Team and one of the most active multifamily brokers in Los Angeles, with 450+ transactions and $1.4B+ in closed sales. Glen has built one of the deepest track records in vintage rent-controlled apartment product anywhere in the city &mdash; the exact asset class of Manzanita &amp; Sanborn.</div></div></div>
+    <div class="bio-card"><img class="bio-headshot" src="images/Filip_Niculete.png" alt="Filip Niculete"><div>
+      <div class="bio-name">Filip Niculete</div><div class="bio-title">Senior Managing Director Investments</div>
+      <div class="bio-text">Co-founder of the LAAA Team and one of Southern California's top multifamily brokers. Since 2011, Filip has built a reputation for execution, integrity, and relentless work ethic, helping lead the team to $1.4B+ in closed transactions while consistently leading the market in active inventory.</div></div></div>
+  </div>
+  <div class="team-grid">
+    <div class="team-card"><img class="team-headshot" src="images/Aida_Memary_Scher.png" alt="Aida Memary Scher"><div class="team-card-name">Aida Memary Scher</div><div class="team-card-title">Associate Director</div></div><div class="team-card"><img class="team-headshot" src="images/Luka_Leader.png" alt="Luka Leader"><div class="team-card-name">Luka Leader</div><div class="team-card-title">Associate Investments</div></div><div class="team-card"><img class="team-headshot" src="images/Morgan_Wetmore.png" alt="Morgan Wetmore"><div class="team-card-name">Morgan Wetmore</div><div class="team-card-title">Associate Investments</div></div><div class="team-card"><img class="team-headshot" src="images/Logan_Ward.png" alt="Logan Ward"><div class="team-card-name">Logan Ward</div><div class="team-card-title">Associate Investments</div></div><div class="team-card"><img class="team-headshot" src="images/Alexandro_Tapia.png" alt="Alexandro Tapia"><div class="team-card-name">Alexandro Tapia</div><div class="team-card-title">Associate Investments</div></div><div class="team-card"><img class="team-headshot" src="images/Blake_Lewitt.png" alt="Blake Lewitt"><div class="team-card-name">Blake Lewitt</div><div class="team-card-title">Associate Investments</div></div><div class="team-card"><img class="team-headshot" src="images/Mike_Palade.png" alt="Mike Palade"><div class="team-card-name">Mike Palade</div><div class="team-card-title">Agent Assistant</div></div><div class="team-card"><img class="team-headshot" src="images/Tony_Dang.png" alt="Tony H. Dang"><div class="team-card-name">Tony H. Dang</div><div class="team-card-title">Business Operations Manager</div></div>
+  </div>
+  <div class="condition-note"><div class="condition-note-label">Key Achievements</div>
+    <p class="achievements-list">
+      &bull; <strong>Chairman's Club</strong> &mdash; Marcus &amp; Millichap's top-tier annual honor<br>
+      &bull; <strong>National Achievement Award</strong> &mdash; multiple years, both partners<br>
+      &bull; <strong>#1 Most Active Multifamily Team in LA County</strong> &mdash; CoStar 2019-2021<br>
+      &bull; <strong>Sales Recognition Award</strong> &mdash; every year since 2016<br>
+      &bull; <strong>40+ transactions per year</strong> &mdash; one of SoCal's most active groups
+    </p></div>
+  <div class="press-strip"><span class="press-strip-label">As Featured In</span><span class="press-logo">BISNOW</span><span class="press-logo">YAHOO FINANCE</span><span class="press-logo">CONNECT CRE</span><span class="press-logo">SFVBJ</span><span class="press-logo">THE PINNACLE LIST</span></div>
+
+  <!-- CAROLWOOD CO-LISTING BAND -->
+  <div class="cw-band">
+    <div class="cw-eyebrow">Co-Listed With</div>
+    <h3>Carolwood Estates &mdash; Beverly Hills</h3>
+    <p style="margin-bottom:14px;">Founded in 2022 by Drew Fenton, Carolwood Estates has become the defining luxury residential brokerage in Los Angeles &mdash; and the second distribution channel for this portfolio. Carolwood's residential network prices assets like the Manzanita triplex the way its buyers do: as scarce, character Silver Lake real estate, not a cap-rate line item.</p>
+    <div class="cw-metrics">
+      <div class="cw-metric"><span class="cw-metric-value">$5.0B</span><span class="cw-metric-label">2025 Sales Volume</span></div>
+      <div class="cw-metric"><span class="cw-metric-value">$10B+</span><span class="cw-metric-label">Closed Since 2022</span></div>
+      <div class="cw-metric"><span class="cw-metric-value">$1B+</span><span class="cw-metric-label">Sub-$4M Sales in 2025 (+54%)</span></div>
+      <div class="cw-metric"><span class="cw-metric-value">~200</span><span class="cw-metric-label">Elite Agents</span></div>
+    </div>
+    <p>Carolwood handled six of LA County's nine most expensive sales of 2025 &mdash; including both record $110M closings &mdash; and is a member of Forbes Global Properties. Nearly a third of its 2025 volume traded off-market through its private-exchange network, the same discreet channel this portfolio will be shown through.</p>
+    <div class="bio-card" style="margin-top:18px;"><img class="bio-headshot cw" src="images/Jon_Adams_head.jpg" alt="Jon Adams"><div>
+      <div class="bio-name" style="color:#fff;">Jon Adams</div><div class="bio-title" style="color:#bbb;">Real Estate Investment Advisor &middot; Carolwood Estates &middot; DRE 02051051</div>
+      <div class="bio-text" style="color:rgba(255,255,255,0.8);">An experienced commercial director with a proven track record in the real estate industry, Jon brings expertise in underwriting, financial analysis, negotiation, risk management, and portfolio management. He has spearheaded and closed complex commercial real estate transactions and overseen diverse portfolios &mdash; and on this assignment he connects the portfolio to Carolwood's residential and investor clientele.</div></div></div>
+  </div>
+</div>
+
+<!-- MARKETING -->
+<div class="page-break-marker"></div>
+<div class="section" id="marketing">
+  <div class="section-title">Our Marketing Approach &amp; Reach</div>
+  <div class="section-subtitle">Two Brokerages &middot; Every Buyer Channel &middot; Within Days of Launch</div>
+  <div class="section-divider"></div>
+  <div class="metrics-grid-4">
+    <div class="metric-card"><span class="metric-value">23,795+</span><span class="metric-label">Email Subscribers</span></div>
+    <div class="metric-card"><span class="metric-value">26.1%</span><span class="metric-label">Avg Open Rate</span></div>
+    <div class="metric-card"><span class="metric-value">7 Days</span><span class="metric-label">To Full Market Reach</span></div>
+    <div class="metric-card"><span class="metric-value">2</span><span class="metric-label">Brokerages, One Listing</span></div>
+  </div>
+  <div class="mkt-quote">"We are proactive marketers, not reactive. This portfolio goes in front of every active apartment investor through Marcus &amp; Millichap &mdash; and in front of the residential and owner-user pool through Carolwood. Two channels, one clearing price."</div>
+  <div class="mkt-channels">
+    <div class="mkt-channel"><h4>Direct &amp; Database</h4><ul>
+      <li>23,795-subscriber Mailchimp list (26.1% avg open)</li>
+      <li>APTO / Salesforce investor database</li>
+      <li>Direct outreach to active Silver Lake / East Hollywood apartment owners and 1031 buyers</li></ul></div>
+    <div class="mkt-channel"><h4>Listing Platforms</h4><ul>
+      <li>TheMLS &mdash; full LA County agent reach</li>
+      <li>LoopNet, Crexi, CoStar &mdash; the institutional and 1031 trifecta</li>
+      <li>www.laaa.com dedicated listing page</li></ul></div>
+    <div class="mkt-channel"><h4>Carolwood Residential Channel</h4><ul>
+      <li>Carolwood private-exchange / off-market network &mdash; ~30% of its $5B 2025 volume traded off-market</li>
+      <li>Forbes Global Properties syndication</li>
+      <li>Owner-user and residential-buyer positioning for the Manzanita triplex</li></ul></div>
+    <div class="mkt-channel"><h4>Social &amp; Positioning</h4><ul>
+      <li>LinkedIn and Instagram &mdash; both teams' amplification</li>
+      <li>Just Listed email blast at launch + All-Inventory send</li>
+      <li>Quarterly 1031 Exchange Opportunities newsletter</li></ul></div>
+  </div>
+  <div class="platform-strip"><span class="platform-strip-label">Advertised On</span><span class="platform-name">THEMLS</span><span class="platform-name">LOOPNET</span><span class="platform-name">CREXI</span><span class="platform-name">COSTAR</span><span class="platform-name">WWW.LAAA.COM</span><span class="platform-name">CAROLWOODRE.COM</span></div>
+</div>
+
+<!-- INVESTMENT OVERVIEW -->
+<div class="page-break-marker"></div>
+<div class="section section-alt" id="investment">
+  <div class="section-title">Investment Overview</div>
+  <div class="section-subtitle">Two Parcels &middot; 11 Units &middot; Sunset Junction, Silver Lake</div>
+  <div class="section-divider"></div>
+  <div class="inv-split">
+    <div class="inv-left">
+      <div class="metrics-grid-4">
+        <div class="metric-card"><span class="metric-value">11</span><span class="metric-label">Units &middot; 2 Parcels</span></div>
+        <div class="metric-card"><span class="metric-value">$222,768</span><span class="metric-label">Combined GSR<span class="note-ref">*</span></span></div>
+        <div class="metric-card"><span class="metric-value">5.90%</span><span class="metric-label">Blended Cap Rate</span></div>
+        <div class="metric-card"><span class="metric-value">$2,595,000</span><span class="metric-label">Combined Value &middot; Two Sales</span></div>
+      </div>
+      <div class="inv-text">
+        <p>904-906 Manzanita St and 905-907 Sanborn Ave are two vintage apartment properties on the same assessor block, held by the same family since 1996 and now coming to market for the first time in a generation. <strong>We recommend selling the two parcels individually</strong> &mdash; each has a distinct highest-and-best buyer, and two separate sales maximize combined proceeds. Both sit one block off Sunset Boulevard at Sunset Junction &mdash; the retail and dining heart of Silver Lake.</p>
+        <p>905 Sanborn is an eight-unit 1927 building of singles and one-bedrooms across two structures, collecting $12,779/month. At $1,600,000 it delivers a 6.7% reassessed cap rate and a 10.4 GRM &mdash; yield at the very top of what Silver Lake offers &mdash; with the per-unit price still set below the sold-comp median and the needed roof replacement disclosed up front.</p>
+        <p>904-906 Manzanita is a 1916 three-unit property of one-bedroom cottage-style units on a 5,643 SF LARD1.5 lot, delivered with two of three units vacant &mdash; a rare Silver Lake opportunity for an owner-user or residential buyer, marketed through Carolwood's residential channel in parallel with the investor campaign.</p>
+      </div>
+    </div>
+    <div class="inv-right">
+      <div class="inv-highlights"><h4>Investment Highlights</h4><ul>
+        <li><strong>6.7% reassessed cap / 10.4 GRM on the 8-unit</strong> &mdash; priced at $200,000/unit vs. a $235,807 sold-comp median</li>
+        <li><strong>Two of three Manzanita units delivered vacant</strong> &mdash; immediate mark-to-market at ~$2,095/mo, or owner-user occupancy</li>
+        <li><strong>Two individual sales, two buyer pools</strong> &mdash; same-block assets totaling 11,109 SF of land; a buyer wanting both can still acquire the pair</li>
+        <li><strong>Sunset Junction location</strong> &mdash; one block to the Sunset Blvd retail corridor, among LA's strongest rental micro-markets</li>
+        <li><strong>Generational offering</strong> &mdash; same ownership since 1996; first time on the market in a generation</li>
+        <li><strong>Dual-channel marketing</strong> &mdash; every apartment investor via Marcus &amp; Millichap + the residential pool via Carolwood</li>
+      </ul></div>
+      <p style="font-size:11px;color:#888;margin-top:4px;"><span class="note-ref">*</span>Combined GSR = Sanborn in-place collections ($153,348/yr) + Manzanita with the two vacant units at market rent ($69,420/yr). See Financial Analysis.</p>
+    </div>
+  </div>
+</div>
+
+<!-- LOCATION -->
+<div class="page-break-marker"></div>
+<div class="section section-alt" id="location">
+  <div class="section-title">Location Overview</div>
+  <div class="section-subtitle">Silver Lake &middot; Sunset Junction &middot; 90029</div>
+  <div class="section-divider"></div>
+  <div class="loc-grid">
+    <div class="loc-left">
+      <p>The portfolio sits on the short wedge of blocks where Manzanita Street and Sanborn Avenue meet, one block north of Sunset Boulevard at Sunset Junction &mdash; the commercial and cultural core of Silver Lake. Residents walk to Intelligentsia Coffee, Mohawk General Store, the Silver Lake Farmers Market, and the dense restaurant-and-bar corridor along Sunset and Santa Monica Boulevards.</p>
+      <p>Silver Lake consistently ranks among Los Angeles' tightest rental submarkets: a renter base of creative-industry and tech professionals, a housing stock dominated by exactly this kind of small vintage property, and almost no developable land. One-bedroom units in vintage buildings near the Junction currently ask $2,000&ndash;$2,450 per month, and the neighborhood's premium over adjacent East Hollywood continues to widen.</p>
+      <p>The location also draws on the employment corridors of Hollywood (3 miles west), Downtown LA (4 miles southeast), and the Glendale/Burbank media cluster (via the 2 and 5 freeways). The 101 freeway is under a mile away, and Metro's B Line at Vermont/Santa Monica is a 15-minute walk.</p>
+    </div>
+    <div class="loc-right">
+      <table class="info-table"><thead><tr><th colspan="2">Location Details</th></tr></thead><tbody>
+        <tr><td>Submarket</td><td>Silver Lake (Sunset Junction)</td></tr>
+        <tr><td>ZIP</td><td>90029</td></tr>
+        <tr><td>Walk To</td><td>Sunset Junction retail &amp; dining (1 block)</td></tr>
+        <tr><td>Vintage 1BR Market Rent</td><td>$2,000&ndash;$2,450/mo</td></tr>
+        <tr><td>Employment Hubs</td><td>Hollywood, DTLA, Glendale/Burbank</td></tr>
+        <tr><td>Freeway Access</td><td>101 / 2 / 5</td></tr>
+        <tr><td>Transit</td><td>Metro B Line (Vermont/Santa Monica)</td></tr>
+        <tr><td>Zoning (both parcels)</td><td>LARD1.5</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+  <div class="loc-wide-map"><img src="images/loc_map.png" alt="Location Map - Manzanita & Sanborn, Silver Lake"></div>
+</div>
+
+<!-- PROPERTY DETAILS -->
+<div class="page-break-marker"></div>
+<div class="section" id="prop-details">
+  <div class="section-title">Property Details</div>
+  <div class="section-subtitle">Two Parcels &middot; Same Block &middot; Same Ownership Since 1996</div>
+  <div class="section-divider"></div>
+  <div class="prop-grid-4">
+    <div>
+      <h3 class="sub-heading" style="margin-top:0;">905-907 Sanborn Ave &mdash; 8 Units</h3>
+      <table class="info-table"><thead><tr><th colspan="2">Property Overview</th></tr></thead><tbody>
+        <tr><td>Units</td><td>8 &mdash; singles &amp; 1BRs (per assessor; roll to be verified)</td></tr>
+        <tr><td>Year Built</td><td>1927 &middot; 2 buildings</td></tr>
+        <tr><td>Building SF</td><td>4,318</td></tr>
+        <tr><td>APN</td><td>5427-005-022</td></tr>
+        <tr><td>Lot Size</td><td>5,466 SF (0.13 ac) &middot; 45' &times; 95'</td></tr>
+        <tr><td>Zoning</td><td>LARD1.5</td></tr>
+        <tr><td>Construction</td><td>Wood frame</td></tr>
+        <tr><td>Parking</td><td>Street</td></tr>
+        <tr><td>Laundry</td><td>On premises</td></tr>
+        <tr><td>Condition</td><td><strong>Roof replacement needed</strong> (disclosed; reflected in pricing)</td></tr>
+      </tbody></table>
+      <table class="info-table"><thead><tr><th colspan="2">Regulatory &amp; Utilities</th></tr></thead><tbody>
+        <tr><td>Rent Control</td><td>LA RSO (pre-1978 vintage)</td></tr>
+        <tr><td>Owner Pays</td><td>Water (DWP), insurance</td></tr>
+        <tr><td>Tenant Pays</td><td>Gas, electric</td></tr>
+        <tr><td>2025 Property Taxes</td><td>$5,655 (AV $387,671 &middot; 1996 base)</td></tr>
+      </tbody></table>
+    </div>
+    <div>
+      <h3 class="sub-heading" style="margin-top:0;">904-906 Manzanita St &mdash; Triplex</h3>
+      <table class="info-table"><thead><tr><th colspan="2">Property Overview</th></tr></thead><tbody>
+        <tr><td>Units</td><td>3 &times; 1BR/1BA (~553 SF avg)</td></tr>
+        <tr><td>Year Built</td><td>1916 &middot; 2 buildings</td></tr>
+        <tr><td>Building SF</td><td>1,659</td></tr>
+        <tr><td>APN</td><td>5427-005-019 (assessor situs 906 Manzanita)</td></tr>
+        <tr><td>Lot Size</td><td>5,643 SF (0.13 ac)</td></tr>
+        <tr><td>Zoning</td><td>LARD1.5</td></tr>
+        <tr><td>Construction</td><td>Wood frame, cottage-style</td></tr>
+        <tr><td>Parking</td><td>1 on-site space + street</td></tr>
+        <tr><td>Occupancy</td><td><strong>1 of 3 occupied</strong> &mdash; front &amp; back units vacant</td></tr>
+      </tbody></table>
+      <table class="info-table"><thead><tr><th colspan="2">Regulatory &amp; Utilities</th></tr></thead><tbody>
+        <tr><td>Rent Control</td><td>LA RSO (pre-1978 vintage)</td></tr>
+        <tr><td>Owner Pays</td><td>All utilities on occupied unit (water, gas, electric, trash)</td></tr>
+        <tr><td>Tenant Pays</td><td>&mdash; (historic all-inclusive structure; new leases can re-set)</td></tr>
+        <tr><td>2025 Property Taxes</td><td>$2,962 (AV $220,915 &middot; 1996 base)</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+  <p style="font-size:11px;color:#888;">Parcel data per LA County Assessor. The Manzanita parcel's assessor situs address is 906 Manzanita St; the building carries unit addresses including 904. The Sanborn building carries addresses 905 and 907. Buyer to verify all specifications in due diligence.</p>
+</div>
+
+<!-- BUYER PROFILE -->
+<div class="section section-alt" id="property-info">
+  <div class="section-title">Buyer Profile &amp; Anticipated Objections</div>
+  <div class="section-subtitle">Target Investors &amp; Data-Backed Responses</div>
+  <div class="section-divider"></div>
+  <div class="buyer-split">
+    <div class="buyer-split-left"><h3 class="sub-heading">Target Buyer Profile</h3>
+      <div class="obj-item"><p class="obj-q">1031 Exchange Buyers</p><p class="obj-a">Yield-driven exchangers who cannot find a 7%+ reassessed cap anywhere in Silver Lake. The Sanborn 8-unit at 9.8 GRM is the strongest income print in the submarket's active inventory.</p></div>
+      <div class="obj-item"><p class="obj-q">Private Local Investors / Value-Add Operators</p><p class="obj-a">Operators who understand vintage RSO product and want the Manzanita vacancy as immediate mark-to-market plus the long-term optionality of two adjacent LARD1.5 parcels.</p></div>
+      <div class="obj-item"><p class="obj-q">Owner-Users &amp; Residential Buyers (Carolwood channel)</p><p class="obj-a">Buyers who want to live in one of the vacant Manzanita cottage units and let the remaining income carry the property &mdash; a lifestyle purchase priced against Silver Lake residential values, not cap rates.</p></div>
+      <div class="obj-item"><p class="obj-q">First-Time Multifamily Buyers</p><p class="obj-a">The triplex at $995,000 is an accessible Silver Lake entry point with residential-style financing available and two units deliverable vacant.</p></div>
+      <p class="bp-closing">Selling the parcels individually &mdash; each marketed through the channel its buyer actually shops in &mdash; widens the buyer pool well beyond a typical single-channel RSO listing.</p>
+    </div>
+    <div class="buyer-split-right"><h3 class="sub-heading">Anticipated Objections</h3>
+      <div class="obj-item"><p class="obj-q">"The 8-unit needs a new roof."</p><p class="obj-a">Disclosed up front and reflected in the pricing: $200,000/unit is roughly 15% below the $235,807 sold-comp median, and the 6.69% reassessed cap out-yields the nearly identical 8-unit comp at 4563 W Fountain Ave (6.20%, closed July 2025). The yield premium over the comp set is the buyer's roof budget.</p></div>
+      <div class="obj-item"><p class="obj-q">"These are RSO buildings with below-market rents."</p><p class="obj-a">Sanborn's $1,597/unit average is close to market for vintage singles/1BRs in this pocket &mdash; this is not a deep-RSO-discount roll. At Manzanita, two of three units are vacant and re-lease immediately at market (~$2,095); only one legacy tenancy remains.</p></div>
+      <div class="obj-item"><p class="obj-q">"There's no per-unit rent roll for Sanborn."</p><p class="obj-a">The aggregate collections ($12,779/mo) reconcile with the owner's 2025 reported income of $168,401 across both properties. The certified per-unit roll is delivered in due diligence, and the underwriting uses only the verified aggregate.</p></div>
+      <div class="obj-item"><p class="obj-q">"Why is the triplex priced at a 4.6% cap?"</p><p class="obj-a">Because its buyer isn't buying a cap rate. Two of three units vacant on a 5,643 SF Silver Lake lot prices against the residential market (Redfin's automated estimate is ~$1.06M) &mdash; which is exactly why Carolwood is on the listing. The income lens is the floor, not the value.</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- SALE COMPS -->
+<div class="page-break-marker"></div>
+<div class="section" id="sale-comps">
+  <div class="section-title">Sale Comparables</div>
+  <div class="section-subtitle">Closed Vintage Apartment Sales &mdash; Silver Lake, East Hollywood, Los Feliz, Echo Park</div>
+  <div class="section-divider"></div>
+  <div class="loc-wide-map comp-map" style="height:340px;"><img src="images/sale_map.png" alt="Sale Comps Map"></div>
+  <div class="table-scroll"><table>
+    <thead><tr><th>Address</th><th>Submarket</th><th class="num">Yr</th><th class="num">Units</th><th class="num">Sale Price</th><th class="num">$/Unit</th><th class="num">$/SF</th><th class="num">Cap</th><th class="num">Dist</th><th class="num">Sold</th></tr></thead>
+    <tbody>
+    <tr><td><a href='https://www.google.com/maps/place/4563+W+Fountain+Ave,+Los+Angeles,+CA+90029/' target='_blank' rel='noopener'>4563 W Fountain Ave</a> &middot; <a href='https://www.theneemagroup.com/wp-content/uploads/2026/03/Descanso-Dr-3209-OM-2.pdf' target='_blank' rel='noopener' style='font-size:11px;color:#3F6FA8;text-decoration:none;'>source &#8599;</a></td><td>East Hollywood</td><td class='num'>1923</td><td class='num'>8</td><td class='num'>$1,550,000</td><td class='num'>$193,750</td><td class='num'>$279</td><td class='num'>6.20%</td><td class='num'>&asymp;0.7 mi</td><td class='num'>Jul 2025</td></tr>
+    <tr><td><a href='https://www.google.com/maps/place/763+N+Heliotrope+Dr,+Los+Angeles,+CA+90029/' target='_blank' rel='noopener'>763 N Heliotrope Dr</a> &middot; <a href='https://www.redfin.com/CA/Los-Angeles/763-N-Heliotrope-Dr-90029/home/7110282' target='_blank' rel='noopener' style='font-size:11px;color:#3F6FA8;text-decoration:none;'>source &#8599;</a></td><td>East Hollywood</td><td class='num'>1922</td><td class='num'>4</td><td class='num'>$950,000</td><td class='num'>$237,500</td><td class='num'>$238</td><td class='num'>&mdash;</td><td class='num'>&asymp;0.9 mi</td><td class='num'>Sep 2025</td></tr>
+    <tr><td><a href='https://www.google.com/maps/place/101+S+Kenmore+Ave,+Los+Angeles,+CA+90004/' target='_blank' rel='noopener'>101 S Kenmore Ave</a> &middot; <a href='https://www.theneemagroup.com/wp-content/uploads/2026/03/Descanso-Dr-3209-OM-2.pdf' target='_blank' rel='noopener' style='font-size:11px;color:#3F6FA8;text-decoration:none;'>source &#8599;</a></td><td>E Hollywood / Ktown</td><td class='num'>1925</td><td class='num'>8</td><td class='num'>$1,595,000</td><td class='num'>$199,375</td><td class='num'>$204</td><td class='num'>7.00%</td><td class='num'>&asymp;1.6 mi</td><td class='num'>Jul 2025</td></tr>
+    <tr><td><a href='https://www.google.com/maps/place/2050+N+Commonwealth+Ave,+Los+Angeles,+CA+90027/' target='_blank' rel='noopener'>2050 N Commonwealth Ave</a> &middot; <a href='https://www.remax.com/ca/los-angeles/home-details/2050-n-commonwealth-ave-los-angeles-ca-90027/3328877949699510302/M00000071/24-456505' target='_blank' rel='noopener' style='font-size:11px;color:#3F6FA8;text-decoration:none;'>source &#8599;</a></td><td>Los Feliz</td><td class='num'>1928</td><td class='num'>17</td><td class='num'>$4,700,000</td><td class='num'>$276,471</td><td class='num'>$384</td><td class='num'>&mdash;</td><td class='num'>&asymp;1.3 mi</td><td class='num'>Aug 2025</td></tr>
+    <tr><td><a href='https://www.google.com/maps/place/5405+Fernwood+Ave,+Los+Angeles,+CA+90027/' target='_blank' rel='noopener'>5405-5419 Fernwood Ave</a> &middot; <a href='https://www.theneemagroup.com/wp-content/uploads/2026/03/Descanso-Dr-3209-OM-2.pdf' target='_blank' rel='noopener' style='font-size:11px;color:#3F6FA8;text-decoration:none;'>source &#8599;</a></td><td>East Hollywood</td><td class='num'>1939</td><td class='num'>28</td><td class='num'>$6,555,175</td><td class='num'>$234,113</td><td class='num'>$227</td><td class='num'>6.29%</td><td class='num'>&asymp;1.5 mi</td><td class='num'>Apr 2025</td></tr>
+    <tr><td><a href='https://www.google.com/maps/place/624+Silver+Lake+Blvd,+Los+Angeles,+CA+90026/' target='_blank' rel='noopener'>624 Silver Lake Blvd</a> &middot; <a href='https://www.redfin.com/CA/Los-Angeles/624-Silver-Lake-Blvd-90026/home/193006135' target='_blank' rel='noopener' style='font-size:11px;color:#3F6FA8;text-decoration:none;'>source &#8599;</a></td><td>Silver Lake</td><td class='num'>&mdash;</td><td class='num'>4</td><td class='num'>$1,315,000</td><td class='num'>$328,750</td><td class='num'>$412</td><td class='num'>&mdash;</td><td class='num'>&asymp;1.4 mi</td><td class='num'>Jan 2025</td></tr>
+    <tr class='summary'><td colspan='4'><strong>Median (6 sold comps)</strong></td><td class='num'><strong>$1,572,500</strong></td><td class='num'><strong>$235,807</strong></td><td class='num'><strong>$259</strong></td><td class='num'><strong>6.29%</strong></td><td class='num'>-</td><td class='num'>-</td></tr>
+    </tbody>
+  </table></div>
+  <div class="comp-narratives">
+    <p class="narrative"><strong>1. 4563 W Fountain Ave</strong> &mdash; The controlling comp for Sanborn: an eight-unit 1923 vintage building in the adjacent East Hollywood pocket, closed July 2025 at $1,550,000 ($193,750/unit, 6.20% cap, 11.26 GRM). Sanborn is priced within 3% of this print at $1,600,000 &mdash; with a superior Silver Lake location &mdash; while still delivering a higher cap rate (6.69%) and a lower GRM (10.43).</p>
+    <p class="narrative"><strong>2. 763 N Heliotrope Dr</strong> &mdash; An original-condition 1922 fourplex of one-bedrooms that closed at $950,000 ($237,500/unit). The closest size analog for the Manzanita triplex: it shows vintage small-unit product clearing near $240K/unit even without vacancy &mdash; Manzanita's premium reflects its two deliverable-vacant units and residential-channel appeal.</p>
+    <p class="narrative"><strong>3. 101 S Kenmore Ave</strong> &mdash; An eight-unit 1925 building that traded at a 7.00% cap and 9.65 GRM &mdash; the value-priced end of the vintage band. Sanborn's 6.69% reassessed cap approaches this yield tier while carrying a far stronger Silver Lake location.</p>
+    <p class="narrative"><strong>4. 2050 N Commonwealth Ave</strong> &mdash; "The Berkshire," a 17-unit 1928 Los Feliz building and another first-sale-in-a-generation offering, closed at $276,471/unit and $384/SF. Demonstrates what scale-plus-character vintage product commands just north of the subject.</p>
+    <p class="narrative"><strong>5. 5405-5419 Fernwood Ave</strong> &mdash; A 28-unit 1939 East Hollywood property at $234,113/unit and a 6.29% cap &mdash; the mid-market institutional print that anchors the comp-set median.</p>
+    <p class="narrative"><strong>6. 624 Silver Lake Blvd</strong> &mdash; A four-unit Silver Lake building delivered with three of four units vacant, closed at $1,315,000 ($412/SF). The direct precedent for pricing vacancy as an asset in this neighborhood &mdash; the same dynamic that drives the Manzanita triplex's residential-lens value.</p>
+  </div>
+</div>
+
+<!-- ON-MARKET -->
+<div class="page-break-marker"></div>
+<div class="section section-alt" id="on-market">
+  <div class="section-title">On-Market Comparables</div>
+  <div class="section-subtitle">Active Competition &amp; the Pricing Ceiling</div>
+  <div class="section-divider"></div>
+  <div class="loc-wide-map comp-map" style="height:340px;"><img src="images/onmkt_map.png" alt="On-Market Comps Map"></div>
+  <div class="table-scroll"><table>
+    <thead><tr><th>Address</th><th>Submarket</th><th class="num">Yr</th><th class="num">Units</th><th class="num">List Price</th><th class="num">$/Unit</th><th class="num">$/SF</th><th class="num">Cap</th><th>Status</th></tr></thead>
+    <tbody>
+    <tr><td><a href='https://www.loopnet.com/Listing/1180-Myra-Ave-Los-Angeles-CA/40570961/' target='_blank' rel='noopener'>1180 Myra Ave</a></td><td>Silver Lake</td><td class='num'>1923</td><td class='num'>4</td><td class='num'>$1,695,000</td><td class='num'>$423,750</td><td class='num'>$511</td><td class='num'>4.24%</td><td>Active &middot; &asymp;49 DOM</td></tr>
+    <tr><td><a href='https://www.loopnet.com/Listing/1217-Westerly-Ter-Los-Angeles-CA/40851695/' target='_blank' rel='noopener'>1217 Westerly Ter</a></td><td>Silver Lake</td><td class='num'>1967</td><td class='num'>4</td><td class='num'>$1,595,000</td><td class='num'>$398,750</td><td class='num'>$394</td><td class='num'>5.90%</td><td>Active &middot; &asymp;27 DOM</td></tr>
+    <tr><td><a href='https://www.loopnet.com/Listing/931-Everett-St-Los-Angeles-CA/40324377/' target='_blank' rel='noopener'>931 Everett St</a></td><td>Echo Park</td><td class='num'>1917</td><td class='num'>5</td><td class='num'>$1,875,000</td><td class='num'>$375,000</td><td class='num'>$383</td><td class='num'>6.83%</td><td>Active &middot; &asymp;69 DOM</td></tr>
+    <tr><td><a href='https://www.loopnet.com/Listing/1250-N-Mariposa-Ave-Los-Angeles-CA/40235142/' target='_blank' rel='noopener'>1250 N Mariposa Ave</a></td><td>East Hollywood</td><td class='num'>1930</td><td class='num'>7</td><td class='num'>$2,400,000</td><td class='num'>$342,857</td><td class='num'>$184</td><td class='num'>6.29%</td><td>Active &middot; &asymp;76 DOM</td></tr>
+    <tr><td><a href='https://www.loopnet.com/Listing/405-Coronado-Ter-Los-Angeles-CA/39617045/' target='_blank' rel='noopener'>405 Coronado Ter</a></td><td>Echo Park</td><td class='num'>1935</td><td class='num'>8</td><td class='num'>$1,575,000</td><td class='num'>$196,875</td><td class='num'>$276</td><td class='num'>5.01%</td><td>Active &middot; &asymp;128 DOM</td></tr>
+    <tr><td><a href='https://www.loopnet.com/Listing/1727-Bellevue-Ave-Los-Angeles-CA/38265653/' target='_blank' rel='noopener'>1727 Bellevue Ave</a></td><td>Echo Park</td><td class='num'>1917</td><td class='num'>6</td><td class='num'>$1,499,888</td><td class='num'>$249,981</td><td class='num'>$449</td><td class='num'>&mdash;</td><td>Active &middot; &asymp;249 DOM</td></tr>
+    <tr class='summary'><td colspan='4'><strong>Average (6 active comps)</strong></td><td class='num'><strong>$1,773,315</strong></td><td class='num'><strong>$331,202</strong></td><td class='num'><strong>$366</strong></td><td class='num'>-</td><td>-</td></tr>
+    </tbody>
+  </table></div>
+  <p class="narrative">The active set frames both sides of the pricing argument. On the yield side, no active listing in the Silver Lake / Echo Park / East Hollywood pocket offers a cap rate above 6.83% &mdash; Sanborn's 6.69% reassessed cap at $1,600,000 sits at the very top of the active-yield band, and the 8-unit at 405 Coronado Ter (asking $196,875/unit at a 5.01% cap, sitting 128 days) shows that Sanborn's per-unit basis is at the market-clearing level while its yield is dramatically stronger. On the residential-value side, the 1923 fourplex at 1180 Myra Ave &mdash; two blocks from the subject &mdash; asks $423,750/unit and $511/SF, well above Manzanita's $331,667/unit and $600/SF on a smaller, vacancy-rich building with a residential buyer profile. The cautionary tale is 1727 Bellevue at 249 days on market: aspirational pricing without a story sits. Each of these two sales is priced to clear through its own channel.</p>
+</div>
+
+<!-- FINANCIAL ANALYSIS -->
+<div class="page-break-marker"></div>
+<div class="section" id="financials">
+  <div class="section-title">Financial Analysis</div>
+  <div class="section-subtitle">Two Properties &middot; Two P&amp;Ls &middot; One Portfolio</div>
+  <div class="section-divider"></div>
+
+  <h3 class="sub-heading">Owner-Reported 2025 Actuals &mdash; Split by Property</h3>
+  <div class="table-scroll"><table>
+    <thead><tr><th>2025 Actuals (Owner-Reported)</th><th class="num">905-907 Sanborn</th><th class="num">904-906 Manzanita</th><th class="num">Combined</th></tr></thead>
+    <tbody>
+      <tr><td>Apartment Income <span class="note-ref">[a]</span></td><td class="num">$153,348</td><td class="num">$15,053</td><td class="num">$168,401</td></tr>
+      <tr><td>Insurance <span class="note-ref">[b]</span></td><td class="num">($6,205)</td><td class="num">($2,385)</td><td class="num">($8,590)</td></tr>
+      <tr><td>LADWP (Water &amp; Power) <span class="note-ref">[c]</span></td><td class="num">($3,063)</td><td class="num">($1,148)</td><td class="num">($4,211)</td></tr>
+      <tr><td>SoCal Gas <span class="note-ref">[d]</span></td><td class="num">&mdash;</td><td class="num">($618)</td><td class="num">($618)</td></tr>
+      <tr><td>Property Taxes <span class="note-ref">[d]</span></td><td class="num">($5,655)</td><td class="num">($2,962)</td><td class="num">($8,617)</td></tr>
+      <tr><td>Plumbing, Repairs, Etc. <span class="note-ref">[c]</span></td><td class="num">($5,818)</td><td class="num">($2,182)</td><td class="num">($8,000)</td></tr>
+      <tr><td>Supplies &amp; Other <span class="note-ref">[c]</span></td><td class="num">($1,818)</td><td class="num">($682)</td><td class="num">($2,500)</td></tr>
+      <tr class="summary"><td><strong>Net (Owner Basis, Pre-Reassessment)</strong></td><td class="num"><strong>$130,789</strong></td><td class="num"><strong>$5,076</strong></td><td class="num"><strong>$135,865</strong></td></tr>
+    </tbody>
+  </table></div>
+  <p style="font-size:11px;color:#888;margin-top:-12px;"><span class="note-ref">[a]</span> Owner reported combined 2025 income of $168,401. Sanborn shown at its current in-place roll ($12,779/mo &times; 12); Manzanita is the remainder, reflecting the vacancy at that property during 2025. <span class="note-ref">[b]</span> Combined premium allocated by building SF (72% / 28%). <span class="note-ref">[c]</span> Combined amount allocated by unit count (8/11 vs 3/11); owner notes repairs and supplies vary year to year. <span class="note-ref">[d]</span> As stated per property on the owner's 2025 summary.</p>
+
+  <!-- SANBORN -->
+  <h3 class="sub-heading" style="margin-top:40px;">905-907 Sanborn Ave &mdash; Rent Roll &amp; Underwriting (at $1,600,000)</h3>
+  <div class="table-scroll"><table>
+    <thead><tr><th>Building</th><th>Mix</th><th class="num">Bldg SF</th><th class="num">In-Place Rent/Mo</th><th class="num">Avg/Unit</th><th class="num">Rent/SF</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td>905-907 Sanborn Ave (8 units, 2 bldgs)</td><td>Singles &amp; 1BR/1BA <span class="note-ref">[1]</span></td><td class='num'>4,318</td><td class='num'>$12,779</td><td class='num'>$1,597</td><td class='num'>$2.96</td><td>Occupied</td></tr>
+      <tr class='summary'><td><strong>Total</strong></td><td><strong>8 units</strong></td><td class='num'><strong>4,318</strong></td><td class='num'><strong>$12,779/mo</strong></td><td class='num'><strong>$1,597</strong></td><td class='num'><strong>$2.96</strong></td><td><strong>$153,348/yr GSR</strong></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="os-two-col">
+    <div class="os-left">
+      <table>
+        <thead><tr><th>Income</th><th class="num">Annual</th><th class="num">Per Unit</th><th class="num">$/SF</th><th class="num">% EGI</th></tr></thead>
+        <tbody>
+          <tr><td>Gross Scheduled Rent <span class="note-ref">[1]</span></td><td class="num">$153,348</td><td class="num">$19,169</td><td class="num">$35.51</td><td class="num">-</td></tr>
+          <tr><td>Less: Economic Vacancy (3%)</td><td class="num">($4,600)</td><td class="num">($575)</td><td class="num">($1.07)</td><td class="num">-</td></tr>
+          <tr class="summary"><td><strong>Effective Gross Income</strong></td><td class="num"><strong>$148,748</strong></td><td class="num"><strong>$18,594</strong></td><td class="num"><strong>$34.45</strong></td><td class="num"><strong>100%</strong></td></tr>
+        </tbody>
+      </table>
+      <table>
+        <thead><tr><th>Expenses</th><th class="num">Annual</th><th class="num">Per Unit</th><th class="num">$/SF</th><th class="num">% EGI</th></tr></thead>
+        <tbody>
+          <tr><td>Real Estate Taxes <span class="note-ref">[2]</span></td><td class="num">$20,000</td><td class="num">$2,500</td><td class="num">$4.63</td><td class="num">13.4%</td></tr>
+          <tr><td>Insurance <span class="note-ref">[3]</span></td><td class="num">$6,205</td><td class="num">$776</td><td class="num">$1.44</td><td class="num">4.2%</td></tr>
+          <tr><td>Water / Sewer (DWP) <span class="note-ref">[4]</span></td><td class="num">$3,100</td><td class="num">$388</td><td class="num">$0.72</td><td class="num">2.1%</td></tr>
+          <tr><td>Trash, Gas, Electric <span class="note-ref">[5]</span></td><td class="num">$1,200</td><td class="num">$150</td><td class="num">$0.28</td><td class="num">0.8%</td></tr>
+          <tr><td>Repairs &amp; Maintenance <span class="note-ref">[6]</span></td><td class="num">$8,000</td><td class="num">$1,000</td><td class="num">$1.85</td><td class="num">5.4%</td></tr>
+          <tr><td>Contract Services <span class="note-ref">[7]</span></td><td class="num">$1,200</td><td class="num">$150</td><td class="num">$0.28</td><td class="num">0.8%</td></tr>
+          <tr><td>Reserves <span class="note-ref">[8]</span></td><td class="num">$2,000</td><td class="num">$250</td><td class="num">$0.46</td><td class="num">1.3%</td></tr>
+          <tr class="summary"><td><strong>Total Operating Expenses</strong></td><td class="num"><strong>$41,705</strong></td><td class="num"><strong>$5,213</strong></td><td class="num"><strong>$9.66</strong></td><td class="num"><strong>28.0%</strong></td></tr>
+          <tr class="summary"><td><strong>Net Operating Income</strong></td><td class="num"><strong>$107,043</strong></td><td class="num"><strong>$13,380</strong></td><td class="num"><strong>$24.79</strong></td><td class="num"><strong>72.0%</strong></td></tr>
+        </tbody>
+      </table>
+      <div class="metrics-grid-4" style="grid-template-columns:repeat(4,1fr);">
+        <div class="metric-card"><span class="metric-value">6.69%</span><span class="metric-label">Cap Rate @ $1.6M</span></div>
+        <div class="metric-card"><span class="metric-value">10.43</span><span class="metric-label">GRM</span></div>
+        <div class="metric-card"><span class="metric-value">$200,000</span><span class="metric-label">Price / Unit</span></div>
+        <div class="metric-card"><span class="metric-value">$371</span><span class="metric-label">Price / SF</span></div>
+      </div>
+    </div>
+    <div class="os-right">
+      <h3 class="sub-heading" style="margin-top:0;">Notes &mdash; Sanborn</h3>
+      <p><strong>[1] GSR:</strong> Owner-reported in-place collections of $12,779/mo. Assessor records show 4 bedrooms / 8 baths across 8 units &mdash; a singles-and-one-bedrooms building; the certified per-unit roll is delivered in due diligence. The $1,597 average is consistent with the building's unit sizes (540 SF avg).</p>
+      <p><strong>[2] Real Estate Taxes:</strong> LA County reassesses to the purchase price at close. Shown at 1.25% of the $1,600,000 list price (current bill: $5,655 on a 1996 base).</p>
+      <p><strong>[3] Insurance:</strong> The owner's actual 2025 combined premium ($8,590) allocated by building SF.</p>
+      <p><strong>[4] Water / Sewer:</strong> The owner's actual 2025 LADWP charge allocated by unit count.</p>
+      <p><strong>[5] Trash, Gas, Electric:</strong> Tenants pay gas and electric. Allowance for common-area service; owner's 2025 statement shows no separate trash line &mdash; buyer to verify hauling arrangement.</p>
+      <p><strong>[6] Repairs &amp; Maintenance:</strong> $1,000/unit vintage-building tier &mdash; above the owner's allocated 2025 actuals ($7,636 including supplies).</p>
+      <p><strong>[7] Contract Services:</strong> Pest and periodic services allowance.</p>
+      <p><strong>[8] Reserves:</strong> $250/unit for a 1927 building. The roof replacement is treated as a capital (price) item, not an operating expense.</p>
+    </div>
+  </div>
+
+  <!-- MANZANITA -->
+  <h3 class="sub-heading" style="margin-top:40px;">904-906 Manzanita St &mdash; Rent Roll &amp; Underwriting (at $995,000)</h3>
+  <div class="table-scroll"><table>
+    <thead><tr><th>Unit</th><th>Type</th><th class="num">&asymp;SF</th><th class="num">Rent/Mo</th><th class="num">Rent/SF</th><th>Status</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td>Middle unit</td><td>1BR / 1BA</td><td class='num'>553</td><td class='num'>$1,595</td><td class='num'>$2.88</td><td>Occupied</td><td>Long-term tenancy; rent unchanged since 2018</td></tr>
+      <tr><td>Front unit</td><td>1BR / 1BA</td><td class='num'>553</td><td class='num'>$2,095 <span class="note-ref">[1]</span></td><td class='num'>$3.79</td><td><strong>Vacant</strong></td><td>Underwritten at market; deliverable at close</td></tr>
+      <tr><td>Back unit</td><td>1BR / 1BA</td><td class='num'>553</td><td class='num'>$2,095 <span class="note-ref">[1]</span></td><td class='num'>$3.79</td><td><strong>Vacant</strong></td><td>Underwritten at market; deliverable at close</td></tr>
+      <tr class='summary'><td><strong>Total</strong></td><td><strong>3 units</strong></td><td class='num'><strong>1,659</strong></td><td class='num'><strong>$5,785/mo</strong></td><td class='num'><strong>$3.49</strong></td><td><strong>33% occ.</strong></td><td><strong>$69,420/yr market GSR</strong></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="os-two-col">
+    <div class="os-left">
+      <table>
+        <thead><tr><th>Income</th><th class="num">Annual</th><th class="num">Per Unit</th><th class="num">$/SF</th><th class="num">% EGI</th></tr></thead>
+        <tbody>
+          <tr><td>Gross Scheduled Rent (Market) <span class="note-ref">[1]</span></td><td class="num">$69,420</td><td class="num">$23,140</td><td class="num">$41.84</td><td class="num">-</td></tr>
+          <tr><td>Less: Economic Vacancy (3%)</td><td class="num">($2,083)</td><td class="num">($694)</td><td class="num">($1.26)</td><td class="num">-</td></tr>
+          <tr class="summary"><td><strong>Effective Gross Income</strong></td><td class="num"><strong>$67,337</strong></td><td class="num"><strong>$22,446</strong></td><td class="num"><strong>$40.59</strong></td><td class="num"><strong>100%</strong></td></tr>
+        </tbody>
+      </table>
+      <table>
+        <thead><tr><th>Expenses</th><th class="num">Annual</th><th class="num">Per Unit</th><th class="num">$/SF</th><th class="num">% EGI</th></tr></thead>
+        <tbody>
+          <tr><td>Real Estate Taxes <span class="note-ref">[2]</span></td><td class="num">$12,438</td><td class="num">$4,146</td><td class="num">$7.50</td><td class="num">18.5%</td></tr>
+          <tr><td>Insurance <span class="note-ref">[3]</span></td><td class="num">$2,385</td><td class="num">$795</td><td class="num">$1.44</td><td class="num">3.5%</td></tr>
+          <tr><td>Water / Sewer (DWP) <span class="note-ref">[4]</span></td><td class="num">$1,200</td><td class="num">$400</td><td class="num">$0.72</td><td class="num">1.8%</td></tr>
+          <tr><td>Trash, Gas, Electric <span class="note-ref">[5]</span></td><td class="num">$900</td><td class="num">$300</td><td class="num">$0.54</td><td class="num">1.3%</td></tr>
+          <tr><td>Repairs &amp; Maintenance <span class="note-ref">[6]</span></td><td class="num">$3,000</td><td class="num">$1,000</td><td class="num">$1.81</td><td class="num">4.5%</td></tr>
+          <tr><td>Contract Services <span class="note-ref">[7]</span></td><td class="num">$600</td><td class="num">$200</td><td class="num">$0.36</td><td class="num">0.9%</td></tr>
+          <tr><td>Reserves <span class="note-ref">[8]</span></td><td class="num">$750</td><td class="num">$250</td><td class="num">$0.45</td><td class="num">1.1%</td></tr>
+          <tr class="summary"><td><strong>Total Operating Expenses</strong></td><td class="num"><strong>$21,273</strong></td><td class="num"><strong>$7,091</strong></td><td class="num"><strong>$12.82</strong></td><td class="num"><strong>31.6%</strong></td></tr>
+          <tr class="summary"><td><strong>Net Operating Income</strong></td><td class="num"><strong>$46,064</strong></td><td class="num"><strong>$15,355</strong></td><td class="num"><strong>$27.77</strong></td><td class="num"><strong>68.4%</strong></td></tr>
+        </tbody>
+      </table>
+      <div class="metrics-grid-4" style="grid-template-columns:repeat(4,1fr);">
+        <div class="metric-card"><span class="metric-value">4.63%</span><span class="metric-label">Cap @ $995K (Market)</span></div>
+        <div class="metric-card"><span class="metric-value">14.33</span><span class="metric-label">GRM (Market)</span></div>
+        <div class="metric-card"><span class="metric-value">$331,667</span><span class="metric-label">Price / Unit</span></div>
+        <div class="metric-card"><span class="metric-value">$600</span><span class="metric-label">Price / SF</span></div>
+      </div>
+    </div>
+    <div class="os-right">
+      <h3 class="sub-heading" style="margin-top:0;">Notes &mdash; Manzanita</h3>
+      <p><strong>[1] GSR:</strong> The occupied middle unit at its actual $1,595 rent; the two vacant units underwritten at $2,095/mo &mdash; the conservative middle of the verified $2,000&ndash;$2,450 asking range for vintage Silver Lake one-bedrooms (Zumper/RentCafe surveys and live listings, July 2026). In-place collections today are $1,595/mo.</p>
+      <p><strong>[2] Real Estate Taxes:</strong> 1.25% of the $995,000 list price on reassessment (current bill: $2,962 on a 1996 base).</p>
+      <p><strong>[3] Insurance:</strong> Owner's actual 2025 combined premium allocated by building SF.</p>
+      <p><strong>[4] Water / Sewer:</strong> Owner's actual 2025 LADWP charge allocated by unit count.</p>
+      <p><strong>[5] Trash, Gas, Electric:</strong> Includes the owner's actual $618 gas. Historic leases were all-utilities-included; new market leases on the vacant units can shift utilities to tenants.</p>
+      <p><strong>[6] Repairs &amp; Maintenance:</strong> $1,000/unit vintage tier, consistent with the owner's allocated actuals.</p>
+      <p><strong>[7] Contract Services:</strong> Pest / periodic services allowance.</p>
+      <p><strong>[8] Reserves:</strong> $250/unit for a 1916 building.</p>
+      <p style="margin-top:8px;"><em>The income statement is the floor value. With two of three units vacant on a 5,643 SF LARD1.5 lot one block from Sunset Junction, the property's clearing price is set by the residential and owner-user market &mdash; the Carolwood channel.</em></p>
+    </div>
+  </div>
+
+  <!-- SANBORN SUMMARY -->
+  <div class="summary-page">
+    <div class="summary-banner">Summary &mdash; 905-907 Sanborn Ave at $1,600,000</div>
+    <div class="summary-two-col">
+      <div class="summary-left">
+        <table class="summary-table"><thead><tr><th colspan="2" class="summary-header">Operating Data</th></tr></thead><tbody>
+          <tr><td>Price</td><td class="num">$1,600,000</td></tr>
+          <tr><td>Down Payment (40%)</td><td class="num">$640,000</td></tr>
+          <tr><td>Number of Units</td><td class="num">8</td></tr>
+          <tr><td>Price / Unit</td><td class="num">$200,000</td></tr>
+          <tr><td>Price / SF</td><td class="num">$371</td></tr>
+          <tr><td>Gross SF</td><td class="num">4,318</td></tr>
+          <tr><td>Lot SF</td><td class="num">5,466</td></tr>
+          <tr><td>Year Built</td><td class="num">1927</td></tr>
+        </tbody></table>
+        <table class="summary-table"><thead><tr><th colspan="2" class="summary-header">Returns (Reassessed)</th></tr></thead><tbody>
+          <tr><td>Cap Rate</td><td class="num">6.69%</td></tr>
+          <tr><td>GRM</td><td class="num">10.43</td></tr>
+          <tr><td>Cash-on-Cash</td><td class="num">5.93%</td></tr>
+          <tr><td>DSCR</td><td class="num">1.55x</td></tr>
+        </tbody></table>
+        <table class="summary-table"><thead><tr><th colspan="2" class="summary-header">Financing (Illustrative)</th></tr></thead><tbody>
+          <tr><td>Loan Amount</td><td class="num">$960,000</td></tr>
+          <tr><td>Rate / Amort</td><td class="num">6.00% / 30yr</td></tr>
+          <tr><td>Loan Constant</td><td class="num">7.20%</td></tr>
+          <tr><td>LTV (actual)</td><td class="num">60.0%</td></tr>
+          <tr><td>Constraint</td><td class="num">LTV</td></tr>
+        </tbody></table>
+      </div>
+      <div class="summary-right">
+        <table class="summary-table"><thead><tr><th colspan="2" class="summary-header">Income</th></tr></thead><tbody>
+          <tr><td>Gross Scheduled Rent</td><td class="num">$153,348</td></tr>
+          <tr><td>Less Vacancy (3%)</td><td class="num">($4,600)</td></tr>
+          <tr><td>Effective Gross Income</td><td class="num">$148,748</td></tr>
+          <tr><td>Operating Expenses</td><td class="num">($41,705)</td></tr>
+          <tr class="summary"><td><strong>Net Operating Income</strong></td><td class="num"><strong>$107,043</strong></td></tr>
+        </tbody></table>
+        <table class="summary-table"><thead><tr><th colspan="2" class="summary-header">Cash Flow</th></tr></thead><tbody>
+          <tr><td>Net Operating Income</td><td class="num">$107,043</td></tr>
+          <tr><td>Debt Service</td><td class="num">($69,072)</td></tr>
+          <tr><td>Net Cash Flow</td><td class="num">$37,971</td></tr>
+          <tr><td>Cash-on-Cash</td><td class="num">5.93%</td></tr>
+          <tr><td>+ Principal Reduction (Yr 1)</td><td class="num">$11,793</td></tr>
+          <tr class="summary"><td><strong>Total Return</strong></td><td class="num"><strong>7.78%</strong></td></tr>
+        </tbody></table>
+        <table class="summary-table"><thead><tr><th colspan="2" class="summary-header">Expense Ratio</th></tr></thead><tbody>
+          <tr><td>OpEx / EGI</td><td class="num">28.0%</td></tr>
+          <tr><td>OpEx / Unit</td><td class="num">$5,213</td></tr>
+          <tr><td>OpEx / SF</td><td class="num">$9.66</td></tr>
+        </tbody></table>
+      </div>
+    </div>
+  </div>
+
+  <!-- MANZANITA SUMMARY -->
+  <div class="summary-page">
+    <div class="summary-banner">Summary &mdash; 904-906 Manzanita St at $995,000</div>
+    <div class="summary-two-col">
+      <div class="summary-left">
+        <table class="summary-table"><thead><tr><th colspan="2" class="summary-header">Operating Data</th></tr></thead><tbody>
+          <tr><td>Price</td><td class="num">$995,000</td></tr>
+          <tr><td>Down Payment (46%)</td><td class="num">$461,500</td></tr>
+          <tr><td>Number of Units</td><td class="num">3</td></tr>
+          <tr><td>Price / Unit</td><td class="num">$331,667</td></tr>
+          <tr><td>Price / SF</td><td class="num">$600</td></tr>
+          <tr><td>Gross SF</td><td class="num">1,659</td></tr>
+          <tr><td>Lot SF</td><td class="num">5,643</td></tr>
+          <tr><td>Year Built</td><td class="num">1916</td></tr>
+        </tbody></table>
+        <table class="summary-table"><thead><tr><th colspan="2" class="summary-header">Returns (Reassessed, Market Rents)</th></tr></thead><tbody>
+          <tr><td>Cap Rate</td><td class="num">4.63%</td></tr>
+          <tr><td>GRM</td><td class="num">14.33</td></tr>
+          <tr><td>Cash-on-Cash</td><td class="num">1.66%</td></tr>
+          <tr><td>DSCR</td><td class="num">1.20x</td></tr>
+        </tbody></table>
+        <table class="summary-table"><thead><tr><th colspan="2" class="summary-header">Financing (Illustrative)</th></tr></thead><tbody>
+          <tr><td>Loan Amount</td><td class="num">$533,500</td></tr>
+          <tr><td>Rate / Amort</td><td class="num">6.00% / 30yr</td></tr>
+          <tr><td>Loan Constant</td><td class="num">7.20%</td></tr>
+          <tr><td>LTV (actual)</td><td class="num">53.6%</td></tr>
+          <tr><td>Constraint</td><td class="num">DCR</td></tr>
+        </tbody></table>
+      </div>
+      <div class="summary-right">
+        <table class="summary-table"><thead><tr><th colspan="2" class="summary-header">Income (Market Rents on Vacants)</th></tr></thead><tbody>
+          <tr><td>Gross Scheduled Rent</td><td class="num">$69,420</td></tr>
+          <tr><td>Less Vacancy (3%)</td><td class="num">($2,083)</td></tr>
+          <tr><td>Effective Gross Income</td><td class="num">$67,337</td></tr>
+          <tr><td>Operating Expenses</td><td class="num">($21,273)</td></tr>
+          <tr class="summary"><td><strong>Net Operating Income</strong></td><td class="num"><strong>$46,064</strong></td></tr>
+        </tbody></table>
+        <table class="summary-table"><thead><tr><th colspan="2" class="summary-header">Cash Flow</th></tr></thead><tbody>
+          <tr><td>Net Operating Income</td><td class="num">$46,064</td></tr>
+          <tr><td>Debt Service</td><td class="num">($38,385)</td></tr>
+          <tr><td>Net Cash Flow</td><td class="num">$7,679</td></tr>
+          <tr><td>Cash-on-Cash</td><td class="num">1.66%</td></tr>
+          <tr><td>+ Principal Reduction (Yr 1)</td><td class="num">$6,554</td></tr>
+          <tr class="summary"><td><strong>Total Return</strong></td><td class="num"><strong>3.08%</strong></td></tr>
+        </tbody></table>
+        <table class="summary-table"><thead><tr><th colspan="2" class="summary-header">Expense Ratio</th></tr></thead><tbody>
+          <tr><td>OpEx / EGI</td><td class="num">31.6%</td></tr>
+          <tr><td>OpEx / Unit</td><td class="num">$7,091</td></tr>
+          <tr><td>OpEx / SF</td><td class="num">$12.82</td></tr>
+        </tbody></table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PRICING -->
+<div class="page-break-marker"></div>
+<div class="section section-alt" id="pricing">
+  <div class="section-title">Pricing &amp; Summary</div>
+  <div class="section-subtitle">Two Individual Sales &mdash; The Recommended Disposition Strategy</div>
+  <div class="section-divider"></div>
+  <p class="narrative">We recommend bringing the properties to market as <strong>two separate listings</strong>, each priced to its own buyer pool: the Sanborn 8-unit to yield-driven apartment investors, the Manzanita triplex to residential, owner-user, and first-time buyers through the Carolwood channel. A buyer who wants both can still acquire the pair.</p>
+
+  <div class="price-duo">
+    <div class="price-card">
+      <div class="pc-label">Sale 1 &middot; 905-907 Sanborn Ave &middot; 8 Units</div>
+      <div class="pc-price">$1,600,000</div>
+      <div class="pc-sub">6.69% Reassessed Cap &middot; 10.43 GRM<br>$200,000 / Unit &middot; $371 / SF &middot; 5,466 SF Lot<br>The yield play &mdash; priced below the sold-comp median with the roof disclosed<br><strong>Expected trade range: $1,500,000 &ndash; $1,650,000</strong></div>
+    </div>
+    <div class="price-card">
+      <div class="pc-label">Sale 2 &middot; 904-906 Manzanita St &middot; Triplex</div>
+      <div class="pc-price">$995,000</div>
+      <div class="pc-sub">2 of 3 Units Delivered Vacant &middot; $331,667 / Unit<br>4.63% Cap / 14.33 GRM at market rents &middot; 5,643 SF Lot<br>The residential play &mdash; marketed through Carolwood's channel<br><strong>Expected trade range: $945,000 &ndash; $1,045,000</strong></div>
+    </div>
+  </div>
+
+  <div class="price-reveal">
+    <h3 class="sub-heading">Pricing Matrix &mdash; 905-907 Sanborn Ave (8 Units)</h3>
+    <div class="table-scroll"><table>
+      <thead><tr><th class="num">Purchase Price</th><th class="num">Cap Rate</th><th class="num">Cash-on-Cash</th><th class="num">$/Unit</th><th class="num">$/SF</th><th class="num">GRM</th><th class="num">DSCR</th></tr></thead>
+      <tbody>
+        <tr><td class="num">$1,750,000</td><td class="num">6.01%</td><td class="num">4.23%</td><td class="num">$218,750</td><td class="num">$405</td><td class="num">11.41</td><td class="num">1.39x</td></tr>
+        <tr><td class="num">$1,700,000</td><td class="num">6.22%</td><td class="num">4.77%</td><td class="num">$212,500</td><td class="num">$394</td><td class="num">11.09</td><td class="num">1.44x</td></tr>
+        <tr><td class="num">$1,650,000</td><td class="num">6.45%</td><td class="num">5.33%</td><td class="num">$206,250</td><td class="num">$382</td><td class="num">10.76</td><td class="num">1.49x</td></tr>
+        <tr class="highlight"><td class="num">$1,600,000</td><td class="num">6.69%</td><td class="num">5.93%</td><td class="num">$200,000</td><td class="num">$371</td><td class="num">10.43</td><td class="num">1.55x</td></tr>
+        <tr><td class="num">$1,550,000</td><td class="num">6.95%</td><td class="num">6.57%</td><td class="num">$193,750</td><td class="num">$359</td><td class="num">10.11</td><td class="num">1.61x</td></tr>
+        <tr><td class="num">$1,500,000</td><td class="num">7.22%</td><td class="num">7.26%</td><td class="num">$187,500</td><td class="num">$347</td><td class="num">9.78</td><td class="num">1.67x</td></tr>
+        <tr><td class="num">$1,450,000</td><td class="num">7.51%</td><td class="num">7.99%</td><td class="num">$181,250</td><td class="num">$336</td><td class="num">9.46</td><td class="num">1.74x</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3 class="sub-heading">Pricing Matrix &mdash; 904-906 Manzanita St (Triplex, Market Rents)</h3>
+    <div class="table-scroll"><table>
+      <thead><tr><th class="num">Purchase Price</th><th class="num">Cap Rate</th><th class="num">Cash-on-Cash</th><th class="num">$/Unit</th><th class="num">$/SF</th><th class="num">GRM</th><th class="num">DSCR</th></tr></thead>
+      <tbody>
+        <tr><td class="num">$1,095,000</td><td class="num">4.09%</td><td class="num">1.30%</td><td class="num">$365,000</td><td class="num">$660</td><td class="num">15.77</td><td class="num">1.20x</td></tr>
+        <tr><td class="num">$1,045,000</td><td class="num">4.35%</td><td class="num">1.46%</td><td class="num">$348,333</td><td class="num">$630</td><td class="num">15.05</td><td class="num">1.20x</td></tr>
+        <tr class="highlight"><td class="num">$995,000</td><td class="num">4.63%</td><td class="num">1.66%</td><td class="num">$331,667</td><td class="num">$600</td><td class="num">14.33</td><td class="num">1.20x</td></tr>
+        <tr><td class="num">$945,000</td><td class="num">4.94%</td><td class="num">1.93%</td><td class="num">$315,000</td><td class="num">$570</td><td class="num">13.61</td><td class="num">1.20x</td></tr>
+        <tr><td class="num">$895,000</td><td class="num">5.29%</td><td class="num">2.42%</td><td class="num">$298,333</td><td class="num">$539</td><td class="num">12.89</td><td class="num">1.22x</td></tr>
+      </tbody>
+    </table></div>
+    <p style="font-size:11px;color:#888;margin-top:-12px;">Each matrix holds that property's income and non-tax expenses constant; only reassessed taxes (1.25% of price) move with price. Financing illustrative at 6.00% / 30-year amortization, lesser of 60% LTV or 1.20x DCR &mdash; the Manzanita loan is DCR-constrained at most price points, which is typical for a residential-lens asset.</p>
+
+    <div class="summary-trade-range">
+      <div class="summary-trade-label">Combined Proceeds if Both Sales Clear at List</div>
+      <div class="summary-trade-prices">$2,595,000</div>
+      <div style="font-size:12px;color:#666;margin-top:6px;">5.90% blended reassessed cap &middot; 11.65 GRM &middot; $235,909 / unit &middot; $434 / SF</div>
+    </div>
+    <h3 class="sub-heading">Pricing Rationale</h3>
+    <p>The recommended pricing reconciles three independent lenses, applied property by property. <strong>On yield:</strong> Sanborn's 6.69% reassessed cap and 10.43 GRM sit inside the closed-comp cap band (6.20&ndash;7.00%) and at the very top of the active-listing yield range &mdash; the direct answer to the roof condition. <strong>On per-unit basis:</strong> Sanborn's $200,000/unit is ~15% below the $235,807 sold-comp median and in line with the two vintage 8-unit prints ($193,750 and $199,375/unit), while Manzanita's $331,667/unit is supported by the vacancy-rich precedent (624 Silver Lake Blvd, 3-of-4 vacant, $328,750/unit) and by 1180 Myra Ave asking $423,750/unit two blocks away. <strong>On the residential lens:</strong> Manzanita's two deliverable-vacant cottages on a 5,643 SF lot price against Silver Lake's residential market (Redfin AVM &asymp; $1.06M), which the Carolwood channel is built to capture.</p>
+    <p>Sold individually as recommended, combined proceeds at list total $2,595,000 &mdash; a 5.90% blended reassessed cap and an 11.65 GRM &mdash; and each property is positioned to clear on its own within an industry-standard 60&ndash;90 day marketing window.</p>
+    <div class="condition-note"><strong>Assumptions &amp; Conditions:</strong> This opinion of value is based on owner-reported 2025 operating figures, LA County Assessor records, verified market rent surveys, and recent comparable sales. The Sanborn per-unit rent roll and the roof's condition/replacement scope are to be verified in due diligence. Financing shown is illustrative (6.00%, 30-year amortization, 60% max LTV). Final terms, prorations, and net proceeds depend on the executed contract and close date. Buyer to verify all figures in due diligence.</div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer" id="contact">
+  <img src="images/LAAA_Team_White.png" class="footer-logo" alt="LAAA Team">
+  <div class="footer-team">
+    <div class="footer-person"><img src="images/Glen_Scher.png" class="footer-headshot" alt="Glen Scher"><div class="footer-name">Glen Scher</div><div class="footer-title">Senior Managing Director Investments<br>Marcus &amp; Millichap &middot; LAAA Team</div><div class="footer-contact"><a href="tel:8182122808">(818) 212-2808</a><br><a href="mailto:Glen.Scher@marcusmillichap.com">Glen.Scher@marcusmillichap.com</a><br>CA License: 01962976</div></div>
+    <div class="footer-person"><img src="images/Filip_Niculete.png" class="footer-headshot" alt="Filip Niculete"><div class="footer-name">Filip Niculete</div><div class="footer-title">Senior Managing Director Investments<br>Marcus &amp; Millichap &middot; LAAA Team</div><div class="footer-contact"><a href="tel:8182122748">(818) 212-2748</a><br><a href="mailto:Filip.Niculete@marcusmillichap.com">Filip.Niculete@marcusmillichap.com</a><br>CA License: 01905352</div></div>
+    <div class="footer-person"><img src="images/Jon_Adams_head.jpg" class="footer-headshot" alt="Jon Adams"><div class="footer-name">Jon Adams</div><div class="footer-title">Real Estate Investment Advisor<br>Carolwood Estates</div><div class="footer-contact"><a href="tel:8059075678">(805) 907-5678</a><br><a href="mailto:jadams@carolwoodre.com">jadams@carolwoodre.com</a><br>CA License: 02051051</div></div>
+  </div>
+  <div class="footer-office">Marcus &amp; Millichap &middot; 16830 Ventura Blvd, Ste. 100, Encino, CA 91436 &middot; <a href="https://www.laaa.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">www.laaa.com</a><br>Carolwood Estates &middot; 9440 Santa Monica Blvd, PH, Beverly Hills, CA 90210 &middot; <a href="https://carolwoodre.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">carolwoodre.com</a></div>
+  <div class="footer-disclaimer">This information has been secured from sources we believe to be reliable, but we make no representations or warranties, expressed or implied, as to the accuracy of the information. Buyer must verify the information and bears all risk for any inaccuracies. Marcus &amp; Millichap Real Estate Investment Services, Inc. | License: CA 01930580.</div>
+</div>
+
+<script>
+var params = new URLSearchParams(window.location.search);
+var client = params.get('client');
+if (client) { var el = document.getElementById('client-greeting'); if (el) el.textContent = 'Prepared Exclusively for ' + client; }
+document.querySelectorAll('.toc-nav a').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    var target = document.querySelector(this.getAttribute('href'));
+    if (target) { var nh = document.getElementById('toc-nav').offsetHeight; window.scrollTo({ top: target.getBoundingClientRect().top + window.pageYOffset - nh - 4, behavior: 'smooth' }); }
+  });
+});
+var tocLinks = document.querySelectorAll('.toc-nav a'); var tocSections = [];
+tocLinks.forEach(function(link) { var s = document.getElementById(link.getAttribute('href').substring(1)); if (s) tocSections.push({ link: link, section: s }); });
+function updateActiveTocLink() {
+  var nh = document.getElementById('toc-nav').offsetHeight + 20; var sp = window.pageYOffset + nh; var cur = null;
+  tocSections.forEach(function(it) { if (it.section.offsetTop <= sp) cur = it.link; });
+  tocLinks.forEach(function(l) { l.classList.remove('toc-active'); }); if (cur) cur.classList.add('toc-active');
+}
+window.addEventListener('scroll', updateActiveTocLink); updateActiveTocLink();
+</script>
+</body>
+</html>
